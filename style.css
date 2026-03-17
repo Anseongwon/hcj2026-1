@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  /* 위아래로 떠있는 부분 붙이기 */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  background-color: rgb(253, 240, 245);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* class를 지정할 때에는 앞에 . 붙이기 */
+.container {
+  max-width: 1100px;
+  /* 가운데정렬 */
+  margin: 0 auto;
+  /* 위아래는 0, 좌우로 30픽셀 띄우기 */
+  padding: 30px 30px;
+}
+
+.main {
+  color: blue;
+  /* 글간격 */
+  line-height: 2.5;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  height: 60px;
+}
+
+/* navbar 안에 있는 container, section안의 container와 구분 */
+.navbar .container {
+  display: flex;
+  /* 가로로 정렬 */
+  flex-direction: row;
+  /* 좌우 끝으로 정렬 */
+  justify-content: space-between;
+  /* 위아래로 가운데정렬 */
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  /* 세로로 정렬은 :  ; */
+  flex-direction: row;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 마우스가 올라갔을 때 */
+.navbar a:hover {
+  /* 밑줄 색 */
+  border-bottom: 2px #aaa solid;
+  color: #aaa;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+button {
+  /* padding 위아래 좌우 */
+  /* padding 좌 위 우 아 */
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: large;
+  font-weight: bold;
+  background-color: lightgray;
+  /* 테두리 두께 */
+  border-width: 1;
+  /* 테두리 모양 둥글게 */
+  border-radius: 10px;
+}
+
+button:hover {
+  color: rgb(255, 95, 95);
+  background-color: rgb(245, 245, 207);
+}
