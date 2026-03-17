@@ -1,3 +1,4 @@
+document.getElementById('today').innerHTML = new Date().toLocaleDateString()
 // document는 자바와 연결된 html
 // get은 현재 날짜 정보를 가져오는 명령어
 document.getElementById('time').innerHTML = new Date().toLocaleString()
@@ -20,7 +21,7 @@ function showhtml() {
   document.getElementById('fig').src = 'img/html5.png'
   //   html 기능 사용 : <b></b> 사용으로 볼드체
   document.getElementById('desc').innerHTML =
-    '<b>html</b>은 구조적 웹문서를 작성하는 데에 사용하는 마크업 언어이다.'
+    '<span style="color:red;"><b>html<b/></span>은 구조적 웹문서를 작성하는 데에 사용하는 마크업 언어이다.'
 }
 function showcss() {
   document.getElementById('fig').src = 'img/css.png'
