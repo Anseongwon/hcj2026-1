@@ -30,7 +30,7 @@ function showcss() {
 function showjavascipt() {
   document.getElementById('fig').src = 'img/javascipt.png'
   document.getElementById('desc').innerHTML =
-    '<b>Javascript</b>는 웹을 위한 프로그래밍 언어이며 웹문서에서 동작을 실행할 수 있게 한다.'
+    '<span style="color:red;"><b>Javascript<b/></span>는 웹을 위한 프로그래밍 언어이며 웹문서에서 동작을 실행할 수 있게 한다.'
 }
 function hide() {
   document.getElementById('fig').src = ''
