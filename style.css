@@ -32,7 +32,7 @@ ul {
 }
 
 .navbar {
-  background-color: rgb(252, 93, 93);
+  background-color: rgb(255, 109, 109);
   color: white;
   height: 60px;
 }
@@ -104,6 +104,13 @@ button:hover {
 }
 
 .dog p {
-  font-style: oblique;
-  color: rgb(255, 0, 221);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  color: rgb(122, 0, 30);
+}
+
+.cat p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  color: darkgoldenrod;
 }
