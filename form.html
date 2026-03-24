@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>로그인</h1>
+    <form action="">
+      <fieldset>
+        <legend>로그인</legend>
+        <label for="user-id">아이디 : </label>
+        <input
+          type="text"
+          id="user-id"
+          size="20"
+          placeholder="kdhong"
+          maxlength="20"
+        />/* placeholder는 입력창에 힌트를 주는 역할을 합니다. */
+        <br />
+
+        <label for="user-pass">패스워드 : </label>
+        <input type="password" id="user-pass" size="20" />
+        <br />
+
+        <input type="submit" value="로그인" />
+      </fieldset>
+      <fieldset>
+        <legend>배송 정보</legend>
+        Search : <input type="search" name="" id="" />
+        <br />
+        URL : <input type="url" name="" id="" />
+        <br />
+        Email : <input type="email" name="" id="" />
+        <br />
+        Tel: <input type="tel" name="" id="" />
+      </fieldset>
+    </form>
+
+    <form action="">
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        value="John"
+        placeholder="이름을 입력하세요"
+      /><br />
+
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+    <br />
+    <hr />
+
+    <h1>라디오(radio)</h1>
+    <input type="radio" id="html" name="fav_language" value="HTML" />
+    <label for="html">HTML</label><br />
+
+    <input type="radio" id="css" name="fav_language" value="CSS" />
+    <label for="css">CSS</label><br />
+
+    <input
+      type="radio"
+      id="javascript"
+      name="fav_language"
+      value="JavaScript"
+      checked
+    />
+    <label for="javascript">JavaScript</label><br /><br />
+
+    <input type="radio" id="python" name="fav_language2" value="Python" />
+    <label for="python">Python</label><br />
+
+    <input type="radio" id="C" name="fav_language2" value="C" />
+    <label for="C">C</label><br />
+
+    <input type="submit" value="Submit" />
+    <br />
+    <hr />
+
+    <h1>체크박스(checkbox)</h1>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked />
+    <label for="vehicle1"> I have a bike</label><br />
+
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+    <label for="vehicle2"> I have a car</label><br />
+
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" checked />
+    <label for="vehicle3"> I have a boat</label><br /><br />
+
+    <input type="submit" value="Submit" /><br />
+
+    <h2>버튼(button)</h2>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!" />
+    <button onclick="alert('Hello World!!')">Click Me!</button><br />
+    <hr />
+
+    <h1>색깔(color)</h1>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+    <input type="submit" value="Submit" /><br />
+    <hr />
+
+    <h1>날짜(date)</h1>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday" />
+    <input type="submit" value="Submit" /><br />
+
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input
+      type="date"
+      id="datemin"
+      name="datemin"
+      min="2000-01-02"
+    /><br /><br />
+
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input
+      type="date"
+      id="datemax"
+      name="datemax"
+      max="1979-12-31"
+    /><br /><br />
+
+    <input type="submit" value="Submit" /><br />
+    <hr />
+    <h1>이메일(email)</h1>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" />
+    <input type="submit" value="Submit" /><br /><br />
+    <label for="fname">First name: </label>
+    <input type="text" id="fname" name="fname" /><br /><br />
+    <label for="lname">Last name: </label>
+    <input type="text" id="lname" name="lname" /><br /><br />
+    <hr />
+
+    <h1>이미지 버튼(image)</h1>
+    <input
+      type="image"
+      src="img_submit.gif"
+      alt="Submit"
+      width="48"
+      height="48"
+    /><br />
+    <hr />
+
+    <h1>파일 업로드(file)</h1>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile" /><br /><br />
+    <input type="submit" value="Submit" /><br />
+    <hr />
+
+    <h1>숫자(number)</h1>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input
+      type="number"
+      id="quantity"
+      name="quantity"
+      min="1"
+      max="5"
+      disabled
+    />
+    /* disabled 속성은 입력을 비활성화합니다. *\
+    <input type="submit" value="Submit" /><br />
+    <hr />
+
+    <h1>연도와 월(month)</h1>
+    <label for="bdaymonth">Birthday (month and year):</label>
+    <input type="month" id="bdaymonth" name="bdaymonth" />
+    <input type="submit" value="Submit" />
+    <br />
+    <hr />
+
+    <h1>범위(range)</h1>
+    <label for="vol">Volume (between 0 and 50):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50" />
+    <input type="submit" value="Submit" /><br />
+    <hr />
+
+    <h1>텍스트에리어(textarea)</h1>
+    <label for="w3review">Review of W3Schools:</label>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea
+    ><br />
+    <hr />
+
+    <h1>셀렉트(select)</h1>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br /><br />
+  </body>
+</html>
